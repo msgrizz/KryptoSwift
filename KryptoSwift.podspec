@@ -26,10 +26,10 @@ s.ios.deployment_target   = "8.0"
 
 s.requires_arc 		  = true
 
-s.preserve_paths = 'CocoaPods/**/*'
+s.preserve_paths = 'Pods/**/*'
   s.pod_target_xcconfig = {
-    'SWIFT_INCLUDE_PATHS[sdk=iphoneos*]'         => '$(PODS_ROOT)/KryptoSwift/CocoaPods/iphoneos',
-    'SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]'  => '$(PODS_ROOT)/KryptoSwift/CocoaPods/iphonesimulator',
+    'SWIFT_INCLUDE_PATHS[sdk=iphoneos*]'         => '$(PODS_ROOT)/KryptoSwift/iphoneos',
+    'SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]'  => '$(PODS_ROOT)/KryptoSwift/iphonesimulator',
     'SWIFT_VERSION' => '4.0'
   }
 
