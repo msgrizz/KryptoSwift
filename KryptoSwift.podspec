@@ -15,8 +15,7 @@ s.author                 = { 'Mihail Salari' => 'info@mihailsalari.com' }
 s.source                  = { :git => 'https://github.com/msgrizz/KryptoSwift.git', :tag => s.version.to_s }
 
 s.platform                = :ios, "8.1"
-s.source_files            = 'KryptoSwift/*.{h,m,mm,swift}', 'KryptoSwift/include/**/*.{h,m,mm,swift}'
-s.private_header_files    = 'KryptoSwift/include/**/*.{h,m,mm,swift}'
+s.source_files            = "KryptoSwift/**/*.{swift}"
 s.requires_arc            = true
 s.frameworks              = 'UIKit', 'Foundation'
 
