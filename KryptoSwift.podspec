@@ -16,10 +16,11 @@ s.source                  = { :git => 'https://github.com/msgrizz/KryptoSwift.gi
 
 s.platform                = :ios, "8.1"
 s.source_files            = 'KryptoSwift/**/*.{swift}'
-s.source_files 		  = 'Sources/**/*.swift'
 s.frameworks              = 'UIKit', 'Foundation'
 s.libraries               = 'xml2'
-s.xcconfig         	  = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 'OTHER_LDFLAGS' => '-lxml2' }
+s.xcconfig         	  = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2', 
+			      'OTHER_LDFLAGS' => '-lxml2' 
+                            }
 
 s.ios.deployment_target   = "8.0"
 
@@ -29,7 +30,7 @@ s.preserve_paths = 'CocoaPods/**/*'
   s.pod_target_xcconfig = {
     'SWIFT_INCLUDE_PATHS[sdk=iphoneos*]'         => '$(PODS_ROOT)/KryptoSwift/CocoaPods/iphoneos',
     'SWIFT_INCLUDE_PATHS[sdk=iphonesimulator*]'  => '$(PODS_ROOT)/KryptoSwift/CocoaPods/iphonesimulator',
-    'SWIFT_VERSION' => '4.1'
+    'SWIFT_VERSION' => '4.0'
   }
 
 end
