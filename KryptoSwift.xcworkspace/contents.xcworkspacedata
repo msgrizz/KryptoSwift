@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:KryptoSwift.podspec">
+   </FileRef>
+   <FileRef
       location = "group:KryptoSwift/../KryptoSwiftExample/KryptoSwiftExample.xcodeproj">
    </FileRef>
    <FileRef

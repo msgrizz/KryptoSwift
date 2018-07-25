@@ -14,6 +14,8 @@
 		EB0FC63421088AA500BB7D95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB0FC63221088AA500BB7D95 /* LaunchScreen.storyboard */; };
 		EB0FC63F21088AA500BB7D95 /* KryptoSwiftExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0FC63E21088AA500BB7D95 /* KryptoSwiftExampleTests.swift */; };
 		EB0FC64A21088AA500BB7D95 /* KryptoSwiftExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0FC64921088AA500BB7D95 /* KryptoSwiftExampleUITests.swift */; };
+		EB0FC66721088C0100BB7D95 /* KryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0FC66621088C0100BB7D95 /* KryptoSwift.framework */; };
+		EB0FC66921088C0400BB7D95 /* KryptoSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB0FC66621088C0100BB7D95 /* KryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EB0FC66A21088C0400BB7D95 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EB0FC66921088C0400BB7D95 /* KryptoSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		EB0FC62621088AA300BB7D95 /* KryptoSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KryptoSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB0FC62921088AA300BB7D95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +63,7 @@
 		EB0FC64521088AA500BB7D95 /* KryptoSwiftExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KryptoSwiftExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB0FC64921088AA500BB7D95 /* KryptoSwiftExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KryptoSwiftExampleUITests.swift; sourceTree = "<group>"; };
 		EB0FC64B21088AA500BB7D95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB0FC66621088C0100BB7D95 /* KryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB0FC66721088C0100BB7D95 /* KryptoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +99,7 @@
 				EB0FC63D21088AA500BB7D95 /* KryptoSwiftExampleTests */,
 				EB0FC64821088AA500BB7D95 /* KryptoSwiftExampleUITests */,
 				EB0FC62721088AA300BB7D95 /* Products */,
+				EB0FC66521088C0100BB7D95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +144,14 @@
 			path = KryptoSwiftExampleUITests;
 			sourceTree = "<group>";
 		};
+		EB0FC66521088C0100BB7D95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB0FC66621088C0100BB7D95 /* KryptoSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +162,7 @@
 				EB0FC62221088AA300BB7D95 /* Sources */,
 				EB0FC62321088AA300BB7D95 /* Frameworks */,
 				EB0FC62421088AA300BB7D95 /* Resources */,
+				EB0FC66A21088C0400BB7D95 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -437,7 +465,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mistergrizzly.KryptoSwiftExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihailsalari.KryptoSwiftExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -455,7 +483,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mistergrizzly.KryptoSwiftExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mihailsalari.KryptoSwiftExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

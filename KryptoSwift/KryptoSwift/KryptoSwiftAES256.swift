@@ -9,7 +9,7 @@
 import Foundation
 import CommonCrypto
 
-struct KryptoSwiftAES256 {
+public struct KryptoSwiftAES256 {
   
   private var key: Data
   private var iv: Data
@@ -32,11 +32,11 @@ struct KryptoSwiftAES256 {
     case badInputVectorLength
   }
   
-  func encrypt(_ digest: Data) throws -> Data {
+  public func encrypt(_ digest: Data) throws -> Data {
     return try crypt(input: digest, operation: CCOperation(kCCEncrypt))
   }
   
-  func decrypt(_ encrypted: Data) throws -> Data {
+  public func decrypt(_ encrypted: Data) throws -> Data {
     return try crypt(input: encrypted, operation: CCOperation(kCCDecrypt))
   }
   
@@ -67,7 +67,7 @@ struct KryptoSwiftAES256 {
     return Data(bytes: UnsafePointer<UInt8>(outBytes), count: outLength)
   }
   
-  static func createKey(password: Data, salt: Data) throws -> Data {
+  public static func createKey(password: Data, salt: Data) throws -> Data {
     let length = kCCKeySizeAES256
     var status = Int32(0)
     var derivedBytes = [UInt8](repeating: 0, count: length)
@@ -90,15 +90,15 @@ struct KryptoSwiftAES256 {
     return Data(bytes: UnsafePointer<UInt8>(derivedBytes), count: length)
   }
   
-  static func randomIv() -> Data {
+  public static func randomIv() -> Data {
     return randomData(length: kCCBlockSizeAES128)
   }
   
-  static func randomSalt() -> Data {
+  public static func randomSalt() -> Data {
     return randomData(length: 8)
   }
   
-  static func randomData(length: Int) -> Data {
+  public static func randomData(length: Int) -> Data {
     var data = Data(count: length)
     let status = data.withUnsafeMutableBytes { mutableBytes in
       SecRandomCopyBytes(kSecRandomDefault, length, mutableBytes)
