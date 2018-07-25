@@ -14,7 +14,6 @@
 				EB0FC617210879F700BB7D95 /* Create Crypto */,
 			);
 			dependencies = (
-				EB526851210895B2008AB340 /* PBXTargetDependency */,
 			);
 			name = CommonCryptoModuleMap;
 			productName = CommonCryptoModuleMap;
@@ -43,13 +42,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = EB0FC613210879DA00BB7D95;
 			remoteInfo = CommonCryptoModuleMap;
-		};
-		EB526850210895B2008AB340 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EB0FC5C3210876FB00BB7D95 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EB0FC5CB210876FB00BB7D95;
-			remoteInfo = KryptoSwift;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -278,11 +270,6 @@
 			target = EB0FC613210879DA00BB7D95 /* CommonCryptoModuleMap */;
 			targetProxy = EB0FC61A21087A1500BB7D95 /* PBXContainerItemProxy */;
 		};
-		EB526851210895B2008AB340 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EB0FC5CB210876FB00BB7D95 /* KryptoSwift */;
-			targetProxy = EB526850210895B2008AB340 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -505,6 +492,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PQVP6Z8X66;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = macosx;
 			};
 			name = Debug;
 		};
@@ -514,6 +502,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PQVP6Z8X66;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = macosx;
 			};
 			name = Release;
 		};
