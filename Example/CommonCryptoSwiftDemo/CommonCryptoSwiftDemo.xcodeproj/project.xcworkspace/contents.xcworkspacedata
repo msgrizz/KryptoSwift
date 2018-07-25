@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/msalari/Desktop/Arcane-master/KryptoSwift.xcodeproj">
+      location = "self:CommonCryptoSwiftDemo.xcodeproj">
    </FileRef>
 </Workspace>
