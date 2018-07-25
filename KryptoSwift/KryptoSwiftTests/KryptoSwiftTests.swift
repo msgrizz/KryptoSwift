@@ -3,7 +3,7 @@
 //  KryptoSwiftTests
 //
 //  Created by Mihail Salari on 7/25/18.
-//  Copyright © 2018 Mister Grizzly. All rights reserved.
+//  Copyright © 2018 Mihail Salari. All rights reserved.
 //
 
 import XCTest
