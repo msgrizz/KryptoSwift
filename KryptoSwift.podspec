@@ -16,7 +16,6 @@ s.source                  = { :git => 'https://github.com/msgrizz/KryptoSwift.gi
 
 s.platform                = :ios, "8.1"
 s.source_files            = "KryptoSwift/**/*.{swift}"
-s.requires_arc            = true
 s.frameworks              = 'UIKit', 'Foundation'
 
 s.ios.deployment_target   = "8.0"

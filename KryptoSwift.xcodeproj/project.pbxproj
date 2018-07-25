@@ -11,9 +11,10 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = EB0FC614210879DA00BB7D95 /* Build configuration list for PBXAggregateTarget "CommonCryptoModuleMap" */;
 			buildPhases = (
-				EB0FC617210879F700BB7D95 /* ShellScript */,
+				EB0FC617210879F700BB7D95 /* Create Crypto */,
 			);
 			dependencies = (
+				EB526851210895B2008AB340 /* PBXTargetDependency */,
 			);
 			name = CommonCryptoModuleMap;
 			productName = CommonCryptoModuleMap;
@@ -42,6 +43,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = EB0FC613210879DA00BB7D95;
 			remoteInfo = CommonCryptoModuleMap;
+		};
+		EB526850210895B2008AB340 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB0FC5C3210876FB00BB7D95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB0FC5CB210876FB00BB7D95;
+			remoteInfo = KryptoSwift;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -223,13 +231,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		EB0FC617210879F700BB7D95 /* ShellScript */ = {
+		EB0FC617210879F700BB7D95 /* Create Crypto */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Create Crypto";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +277,11 @@
 			isa = PBXTargetDependency;
 			target = EB0FC613210879DA00BB7D95 /* CommonCryptoModuleMap */;
 			targetProxy = EB0FC61A21087A1500BB7D95 /* PBXContainerItemProxy */;
+		};
+		EB526851210895B2008AB340 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB0FC5CB210876FB00BB7D95 /* KryptoSwift */;
+			targetProxy = EB526850210895B2008AB340 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -413,7 +427,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mihailsalari.KryptoSwift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(inherited) CommonCrypto ${BUILT_PRODUCTS_DIR}/CommonCryptoModuleMap";
+				SWIFT_INCLUDE_PATHS = "$(inherited) ${BUILT_PRODUCTS_DIR}/CommonCryptoModuleMap";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -441,7 +455,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mihailsalari.KryptoSwift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_INCLUDE_PATHS = "$(inherited) CommonCrypto ${BUILT_PRODUCTS_DIR}/CommonCryptoModuleMap";
+				SWIFT_INCLUDE_PATHS = "$(inherited) ${BUILT_PRODUCTS_DIR}/CommonCryptoModuleMap";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
