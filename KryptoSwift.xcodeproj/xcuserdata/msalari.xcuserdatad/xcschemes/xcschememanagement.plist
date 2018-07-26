@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>KryptoSwift-iOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>KryptoSwift-macOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>KryptoSwift-tvOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>KryptoSwift-watchOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>D29B657B1FBAEEC400BBFBDE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D29B65881FBAEED000BBFBDE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D29B65A41FBB47D100BBFBDE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D5B2E89E1C3A780C00C0327D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D5B2E8A81C3A780C00C0327D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D5C6293F1C3A7FAA007F7B7C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D5C629481C3A7FAA007F7B7C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
