@@ -43,6 +43,7 @@
 		D5B2E8AA1C3A780C00C0327D /* KryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* KryptoSwift.framework */; };
 		D5C6294A1C3A7FAA007F7B7C /* KryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629401C3A7FAA007F7B7C /* KryptoSwift.framework */; };
 		EB6A458921090F6F0007ED84 /* KryptoSwiftAES256.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6A458821090F6E0007ED84 /* KryptoSwiftAES256.swift */; };
+		EB876EA92109E48700E0626C /* KryptoSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB876EA82109E48700E0626C /* KryptoSwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		D5C629401C3A7FAA007F7B7C /* KryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C629491C3A7FAA007F7B7C /* KryptoSwift-Mac-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KryptoSwift-Mac-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB6A458821090F6E0007ED84 /* KryptoSwiftAES256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KryptoSwiftAES256.swift; sourceTree = "<group>"; };
+		EB876EA82109E48700E0626C /* KryptoSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KryptoSwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +220,7 @@
 				D2F18FF71CDF22570053BC66 /* Data+Extensions.swift */,
 				D2A4E2721D48D7D2002016C5 /* Obfuscator.swift */,
 				EB6A458821090F6E0007ED84 /* KryptoSwiftAES256.swift */,
+				EB876EA82109E48700E0626C /* KryptoSwift.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -390,7 +393,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = Fantageek;
+				ORGANIZATIONNAME = KryptoSwift;
 				TargetAttributes = {
 					D29B657B1FBAEEC400BBFBDE = {
 						CreatedOnToolsVersion = 9.1;
@@ -543,6 +546,7 @@
 				D2F18FE91CDE99250053BC66 /* Hash.swift in Sources */,
 				D2F18FF21CDEA8400053BC66 /* HMAC.swift in Sources */,
 				D2F18FEF1CDEA2E70053BC66 /* Crypto.swift in Sources */,
+				EB876EA92109E48700E0626C /* KryptoSwift.swift in Sources */,
 				EB6A458921090F6F0007ED84 /* KryptoSwiftAES256.swift in Sources */,
 				D2A4E2731D48D7D2002016C5 /* Obfuscator.swift in Sources */,
 			);
